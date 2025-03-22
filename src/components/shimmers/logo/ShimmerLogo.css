@@ -1,0 +1,17 @@
+.shimmer-logo {
+  width: 41px;
+  height: 41px;
+  background: linear-gradient(-45deg, #f6f7f8 25%, #edeef1 50%, #f6f7f8 75%);
+  background-size: 400% 400%;
+  animation: shimmer 1.2s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

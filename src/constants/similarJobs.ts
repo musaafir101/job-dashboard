@@ -1,0 +1,1 @@
+export const similarJobs = ["Frontend", "Backend", "Graphic Designer"];
