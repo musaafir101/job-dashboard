@@ -1,12 +1,23 @@
 @import "tailwindcss";
-@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/fonts/NeueHaasDisplayMedium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 600;
+}
 
 body,
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-family: "Neue Haas Display", sans-serif;
 }
 
 input::placeholder {
