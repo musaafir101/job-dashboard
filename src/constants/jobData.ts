@@ -1,6 +1,6 @@
 import TeamsLogo from "../assets/images/teams-opt.svg"
 
-// Define Job Type
+// Job Type
 export interface Job {
     id: number;
     title: string;
@@ -12,7 +12,7 @@ export interface Job {
     promoted?: boolean;
   }
   
-  // ✅ Mock Job Data (At Least 5 Jobs)
+  // Mock Job Data (At Least 5 Jobs)
   export const jobList: Job[] = [
     {
       id: 1,

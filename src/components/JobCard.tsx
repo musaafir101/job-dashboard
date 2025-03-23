@@ -40,8 +40,8 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
           <img src={clock} alt="clock" />
           <span>
             {job.timeAgo} |
-            <a href="#" className="text-blue-600 font-medium">
-              {job.applicants}
+            <a href="#" className="text-blue-600 font-medium ml-[4px]">
+              {job.applicants} applicants
             </a>
           </span>
         </div>

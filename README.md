@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+# Job Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Job Dashboard application built using **React (Vite), TypeScript, and Tailwind CSS**. This project helps users browse job listings with filtering options and a smooth UI experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Job listing with search and filter options.
+- Responsive UI using **Tailwind CSS**.
+- Component-based architecture with TypeScript.
+- Shimmer effects for loading states.
+- Offcanvas menu for mobile navigation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React (Vite)**
+- **TypeScript**
+- **Tailwind CSS**
+- **ESLint & Prettier** (for code formatting)
+- **Vite** (for fast development)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 📂 Folder Structure
+
+job-dashboard/
+│── dist/ # Production build files
+│── node_modules/ # Dependencies
+│── public/ # Static assets
+│── src/ # Main source code
+│ │── assets/ # Images, fonts, and other assets
+│ │── components/ # Reusable UI components
+│ │ │── icons/ # Icon components
+│ │ │── Offcanvas/ # Offcanvas components
+│ │ │── shimmers/ # Skeleton loaders and shimmer effects
+│ │ ├── Header.tsx # Header component
+│ │ ├── JobCard.tsx # Job card component
+│ │ ├── JobFilter.tsx # Job filter component
+│ │ ├── ProfileCard.tsx # Profile card component
+│ │ ├── Sidebar.tsx # Sidebar component
+│ │ ├── SimilarJobs.tsx # Similar jobs component
+│ │── constants/ # Constants and static data
+│ │── pages/ # Page components
+│ │── App.tsx # Main application component
+│ │── index.tsx # React entry point
+│ │── index.css # Global styles
+│ │── main.tsx # Main application logic
+│ │── vite-env.d.ts # TypeScript environment config
+│── .gitignore # Ignored files in Git
+│── eslint.config.js # ESLint configuration
+│── package.json # Project metadata and dependencies
+│── tsconfig.json # TypeScript configuration
+│── README.md # Project documentation
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone the repository
+
+```sh
+git clone https://github.com/your-username/job-dashboard.git
+cd job-dashboard
+
+npm install
+
+npm run dev
+
+This README includes everything you need: **installation, folder structure and setup steps**. Let me know if you want any changes! 😊
 ```
